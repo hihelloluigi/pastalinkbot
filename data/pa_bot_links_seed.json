@@ -1,0 +1,202 @@
+[
+  {
+    "intent": "fascicolo_sanitario",
+    "sub_intent": "accesso_fse",
+    "region": "Lombardia",
+    "label": "FSE Lombardia",
+    "url": "https://www.fascicolosanitario.regione.lombardia.it/",
+    "notes": "Accesso con SPID/CIE/CNS"
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "sub_intent": "accesso_fse",
+    "region": "Lazio",
+    "label": "FSE Lazio",
+    "url": "https://www.salutelazio.it/fascicolo-sanitario-elettronico1",
+    "notes": "Accesso con SPID/CIE/CNS"
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "sub_intent": "accesso_fse",
+    "region": "Emilia-Romagna",
+    "label": "FSE Emilia-Romagna",
+    "url": "https://salute.regione.emilia-romagna.it/fascicolo-sanitario-elettronico-2-0",
+    "notes": "Accesso e assistenza"
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "sub_intent": "accesso_fse",
+    "region": "Veneto",
+    "label": "FSE Veneto (Sanità km zero)",
+    "url": "https://sanitakmzerofascicolo.it/",
+    "notes": "Referti e prenotazioni CUP"
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "sub_intent": "accesso_fse",
+    "region": "Piemonte",
+    "label": "Salute Piemonte – FSE",
+    "url": "https://www.salutepiemonte.it/",
+    "notes": "Punto unico servizi sanitari"
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "sub_intent": "accesso_fse",
+    "region": "Toscana",
+    "label": "FSE Toscana",
+    "url": "https://fascicolosanitario.regione.toscana.it/",
+    "notes": "Accesso al FSE"
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "sub_intent": "portale_nazionale",
+    "region": "Nazionale",
+    "label": "FSE nazionale – Informazioni",
+    "url": "https://www.fascicolosanitario.gov.it/",
+    "notes": "Info generali e link ai fascicoli regionali"
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "sub_intent": "elenco_regionali",
+    "region": "Nazionale",
+    "label": "Elenco FSE regionali",
+    "url": "https://www.fascicolosanitario.gov.it/fascicoli-regionali.html",
+    "notes": "Lista link ai FSE per Regione"
+  },
+  {
+    "intent": "bollo_auto",
+    "sub_intent": "calcolo_bollo",
+    "region": "Nazionale",
+    "label": "ACI – Calcolo bollo/superbollo",
+    "url": "https://online.aci.it/acinet/calcolobollo/",
+    "notes": "Calcolo ufficiale ACI"
+  },
+  {
+    "intent": "bollo_auto",
+    "sub_intent": "informazioni_bollo",
+    "region": "Nazionale",
+    "label": "ACI – Bollo auto (panoramica)",
+    "url": "https://aci.gov.it/servizi/bollo-auto/",
+    "notes": "Info e servizi collegati"
+  },
+  {
+    "intent": "bollo_auto",
+    "sub_intent": "pagamento_bollo",
+    "region": "Nazionale",
+    "label": "PagoPA – Home",
+    "url": "https://www.pagopa.gov.it/",
+    "notes": "Piattaforma pagamenti verso PA"
+  },
+  {
+    "intent": "patente",
+    "sub_intent": "portale_automobilista",
+    "region": "Nazionale",
+    "label": "Portale dell’Automobilista – Home",
+    "url": "https://www.ilportaledellautomobilista.it/",
+    "notes": "Servizi patenti e veicoli"
+  },
+  {
+    "intent": "patente",
+    "sub_intent": "rinnovo_patente_info",
+    "region": "Nazionale",
+    "label": "Rinnovo patente – Info operative",
+    "url": "https://www.ilportaledellautomobilista.it/web/portale-automobilista/modalita-operative-rinnovo-patenti",
+    "notes": "Istruzioni operative"
+  },
+  {
+    "intent": "servizi_pubblici",
+    "sub_intent": "app_io_sito",
+    "region": "Nazionale",
+    "label": "App IO – Sito ufficiale",
+    "url": "https://ioapp.it/",
+    "notes": "App dei servizi pubblici"
+  },
+  {
+    "intent": "servizi_pubblici",
+    "sub_intent": "app_io_playstore",
+    "region": "Nazionale",
+    "label": "App IO – Google Play",
+    "url": "https://play.google.com/store/apps/details?hl=it&id=it.pagopa.io.app",
+    "notes": "Scheda store Android"
+  },
+  {
+    "intent": "servizi_pubblici",
+    "sub_intent": "pagopa_info",
+    "region": "Nazionale",
+    "label": "PagoPA – Sito società",
+    "url": "https://www.pagopa.it/",
+    "notes": "Info istituzionali PagoPA"
+  },
+  {
+    "intent": "anagrafe",
+    "sub_intent": "certificati_online",
+    "region": "Nazionale",
+    "label": "ANPR – Certificati online",
+    "url": "https://www.anagrafenazionale.interno.it/area-cittadino/certificati/",
+    "notes": "Scarico certificati anagrafici"
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "sub_intent": "accesso_fse",
+    "region": "Sicilia",
+    "label": "FSE Sicilia",
+    "url": "https://www.sistemats.sanita.sicilia.it/",
+    "notes": "Accesso SPID/CIE/CNS"
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "sub_intent": "accesso_fse",
+    "region": "Puglia",
+    "label": "FSE Puglia",
+    "url": "https://www.sanita.puglia.it/web/pugliasalute/fascicolo-sanitario-elettronico",
+    "notes": "Portale salute Puglia"
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "sub_intent": "accesso_fse",
+    "region": "Campania",
+    "label": "FSE Campania",
+    "url": "https://www.soresa.it/fse/",
+    "notes": "Accesso fascicolo Campania"
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "sub_intent": "accesso_fse",
+    "region": "Sardegna",
+    "label": "FSE Sardegna",
+    "url": "https://www.fascicolosanitario.sardegnasalute.it/",
+    "notes": "Portale salute Sardegna"
+  },
+  {
+    "intent": "cup",
+    "sub_intent": "prenotazioni_visite",
+    "region": "Lombardia",
+    "label": "Prenotazioni Regione Lombardia",
+    "url": "https://prenotasalute.regione.lombardia.it/",
+    "notes": "Prenotazione visite/esami"
+  },
+  {
+    "intent": "cup",
+    "sub_intent": "prenotazioni_visite",
+    "region": "Sicilia",
+    "label": "CUP Sicilia",
+    "url": "https://www.sistemats.sanita.sicilia.it/prenotazioni",
+    "notes": "Sistema prenotazioni Sicilia"
+  },
+  {
+    "intent": "scuola",
+    "sub_intent": "iscrizioni_online",
+    "region": "Nazionale",
+    "label": "Iscrizioni Online MIUR",
+    "url": "https://www.istruzione.it/iscrizionionline/",
+    "notes": "Accesso con SPID"
+  },
+  {
+    "intent": "tari",
+    "sub_intent": "info_tari",
+    "region": "Nazionale",
+    "label": "TARI – Guida Agenzia Entrate",
+    "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/tasse/tari",
+    "notes": "Info nazionali sulla tassa rifiuti"
+  }
+]

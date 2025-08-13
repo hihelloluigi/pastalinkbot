@@ -1,0 +1,16 @@
+
+# /etc/systemd/system/pa-bot.service
+[Unit]
+Description=Telegram PA-Bot
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/opt/telegram-pa-bot
+Environment=TELEGRAM_TOKEN=REPLACE_ME
+Environment=DATA_PATH=./data/pa_bot_links_seed.json
+ExecStart=/usr/bin/python3 /opt/telegram-pa-bot/bot.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

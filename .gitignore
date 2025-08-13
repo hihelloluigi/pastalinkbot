@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Environment variables
+.env
+
+# macOS system files
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+*$py.class
+
+# Logs
+*.log
+
+# Local database/cache
+*.sqlite3
+*.db
+
+# gettext backup files
+*.po~
+*.pot~
+*.mo~
+
+# VSCode / Editor settings
+.vscode/
+.idea/
+
+# Compiled translations
+locale/*/LC_MESSAGES/*.mo
+
+# Docker
+*.pid
