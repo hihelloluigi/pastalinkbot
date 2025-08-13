@@ -26,6 +26,41 @@ Supports **Italian** 🇮🇹 and **English** 🇬🇧 based on the user's Teleg
 
 ---
 
+## 🚀 Installation
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/hihelloluigi/pastalinkbot.git
+cd pastalinkbot
+```
+
+1. **Set up Python virtual environment**
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+1. **Install dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+1. **Configure environment variables**
+
+Create a `.env` file:
+
+```env
+TELEGRAM_TOKEN=your_telegram_bot_token
+DATA_PATH=./data/pa_bot_links_seed.json
+```
+
+You can see an example of env file in `env.example`
+
+---
+
 ## 📦 Dependency Management
 
 This project uses modern Python packaging with `pyproject.toml` and a split requirements system:
@@ -51,41 +86,6 @@ pip install -e .
 pip install -r requirements/dev.txt
 pip install -r requirements/test.txt
 pip install -r requirements/prod.txt
-```
-
----
-
----
-
-## 🚀 Installation
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/yourname/telegram-pa-bot.git
-cd telegram-pa-bot
-```
-
-1. **Set up Python virtual environment**
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-```
-
-1. **Install dependencies**
-
-```bash
-pip install -r requirements.txt
-```
-
-1. **Configure environment variables**
-
-Create a `.env` file:
-
-```env
-TELEGRAM_TOKEN=your_telegram_bot_token
-DATA_PATH=./data/pa_bot_links_seed.json
 ```
 
 ---
@@ -125,7 +125,7 @@ Once everything is installed:
 
 ```bash
 source .venv/bin/activate
-python bot.py
+python main.py
 ```
 
 The bot will start polling and will reply to your Telegram messages.
@@ -219,13 +219,35 @@ How do I renew my driving license?
 ## 🛠 Project Structure
 
 ```txt
-telegram-pa-bot/
-├── bot.py                 # Main bot code
-├── llm.py                 # LLM interaction with Ollama
-├── data/
-│   └── pa_bot_links_seed.json   # Public service links database
-├── requirements.txt
-└── README.md
+pastalinkbot/
+├── main.py                  # Entry point for the bot
+├── config/                  # Configuration (settings, constants)
+├── core/                    # Bot logic
+│   ├── bot.py               # Main bot logic
+│   ├── handlers/            # Command, conversation, message handlers
+│   ├── models/              # Intent, region, response models
+│   └── services/            # Catalog, classifier, formatter, validator
+├── data/                    # Data assets
+│   ├── pa_bot_links_seed.json   # Public service links database
+│   └── locale/              # i18n translation files
+├── requirements/            # Environment-specific dependencies
+│   ├── base.txt
+│   ├── dev.txt
+│   ├── prod.txt
+│   └── test.txt
+├── scripts/                 # Utility scripts
+│   ├── manage_deps.py
+│   └── run_tests.py
+├── tests/                   # Pytest-based tests
+├── utils/                   # Helpers, decorators, logging, i18n
+├── .env.example             # Example environment file
+├── .gitignore
+├── LICENSE
+├── Makefile                 # Dev workflow shortcuts
+├── pyproject.toml           # Project metadata & dependencies
+├── README.md
+├── runtime.txt              # Python runtime version (for deployment)
+└── pa-bot.service.example   # Example systemd service file
 ```
 
 ---
@@ -256,11 +278,11 @@ Each entry should include:
 ```json
 {
   "intent": "fascicolo_sanitario",
-  "sub_intent": "accesso_fse",
-  "region": "Lombardia",
-  "label": "FSE Lombardia",
-  "url": "https://www.fascicolosanitario.regione.lombardia.it/",
-  "notes": "Accesso con SPID/CIE/CNS"
+  "region": "Lazio",
+  "label": "FSE Lazio - Salute Lazio",
+  "url": "https://www.salutelazio.it/fascicolo-sanitario-elettronico1",
+  "description": "Fascicolo Sanitario Elettronico del Lazio - Accesso con SPID/CIE/CNS",
+  "tags": ["health", "medical", "records", "spid", "cie"]
 }
 ```
 
