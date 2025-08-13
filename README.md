@@ -21,8 +21,39 @@ Supports **Italian** 🇮🇹 and **English** 🇬🇧 based on the user's Teleg
 ## 📦 Requirements
 
 - Python **3.10+** (tested on 3.13.1)
-- [Telegram Bot Token](https://core.telegram.org/bots#how-do-i-create-a-bot)  
+- [Telegram Bot Token](https://core.telegram.org/bots#how-do-i-create-a-bot)
 - [Ollama](https://ollama.com) installed locally
+
+---
+
+## 📦 Dependency Management
+
+This project uses modern Python packaging with `pyproject.toml` and a split requirements system:
+
+- Core dependencies: `requirements/base.txt`
+- Development: `requirements/dev.txt`
+- Testing: `requirements/test.txt`
+- Production: `requirements/prod.txt`
+
+Install dependencies with one of the following:
+
+```bash
+# Recommended for development
+pip install -e .[dev]
+
+# For testing only
+pip install -e .[test]
+
+# For production
+pip install -e .
+
+# Or use requirements files directly
+pip install -r requirements/dev.txt
+pip install -r requirements/test.txt
+pip install -r requirements/prod.txt
+```
+
+---
 
 ---
 
@@ -48,7 +79,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-1. **Configure environment variables**  
+1. **Configure environment variables**
 
 Create a `.env` file:
 
@@ -72,7 +103,7 @@ We use **LLaMA 3.1 8B** for natural language understanding.
 ollama pull llama3.1:8b
 ```
 
-*(If you have less than 16GB RAM, you can use a quantized version: `ollama pull llama3.1:8b-q4_K_M`)*
+_(If you have less than 16GB RAM, you can use a quantized version: `ollama pull llama3.1:8b-q4_K_M`)_
 
 1. **Run Ollama in the background**
 
@@ -101,11 +132,75 @@ The bot will start polling and will reply to your Telegram messages.
 
 ---
 
+## 🧪 Running Tests
+
+Tests use `pytest` and are organized in the `tests/` directory. You can run tests with:
+
+```bash
+pytest
+```
+
+Or use the custom test runner for advanced options:
+
+```bash
+python run_tests.py --type all        # Run all tests
+python run_tests.py --type unit       # Run unit tests only
+python run_tests.py --type integration # Run integration tests only
+python run_tests.py --type coverage   # Run tests with coverage (see htmlcov/)
+python run_tests.py --type quick      # Run all except slow tests
+python run_tests.py --type basic      # Run basic smoke tests
+```
+
+Test markers: `unit`, `integration`, `slow` (see `tests/`).
+
+---
+
+## 🛠 Makefile Shortcuts
+
+Common development tasks are available via the Makefile:
+
+### Dependency Installation
+
+```bash
+make install-base        # Install base dependencies
+make install-prod        # Install production dependencies
+make install-dev         # Install development dependencies
+make install-test        # Install test dependencies
+make install-dev-modern  # Install dev deps via pyproject.toml
+make install-test-modern # Install test deps via pyproject.toml
+```
+
+### Testing
+
+```bash
+make test                # Run all tests
+make test-coverage       # Run tests with coverage
+make test-fail-fast      # Run tests and stop on first failure
+make test-verbose        # Run tests with verbose output
+```
+
+### Internationalization (i18n)
+
+```bash
+make i18n-extract        # Extract translatable strings
+make i18n-init           # Initialize .po files for each language
+make i18n-compile        # Compile .po files to .mo
+make i18n-refresh        # Refresh translations
+```
+
+### Linting & Code Quality
+
+```bash
+make lint                # Run code quality and lint checks
+```
+
+---
+
 ## 💡 Example Commands
 
 **In Italian:**
 
-``` txt
+```txt
 Dove vedo le ricette del mio dottore?
 Dove pago il bollo auto?
 Come rinnovo la patente?
@@ -113,7 +208,7 @@ Come rinnovo la patente?
 
 **In English:**
 
-``` txt
+```txt
 Where do I see my doctor's prescriptions?
 Where do I pay the car tax?
 How do I renew my driving license?
@@ -123,7 +218,7 @@ How do I renew my driving license?
 
 ## 🛠 Project Structure
 
-``` txt
+```txt
 telegram-pa-bot/
 ├── bot.py                 # Main bot code
 ├── llm.py                 # LLM interaction with Ollama

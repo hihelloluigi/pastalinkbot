@@ -8,9 +8,7 @@
       "addWords": true
     }
   ],
-  "dictionaries": [
-    "custom-dictionary"
-  ],
+  "dictionaries": ["custom-dictionary"],
   "words": [
     "amministrazione",
     "anagrafici",
@@ -64,7 +62,9 @@
     "vedo",
     "venv",
     "visite",
-    "vuoi"
+    "vuoi",
+    "pycache",
+    "Aiello"
   ],
   "ignoreWords": [],
   "import": []

@@ -1,0 +1,11 @@
+# PAstaLinkBot Base Requirements
+# Core dependencies for the Telegram bot
+
+# Telegram Bot API
+python-telegram-bot==21.6
+
+# Environment and configuration
+python-dotenv>=1.0.0
+
+# HTTP requests
+requests>=2.32.0

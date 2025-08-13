@@ -34,9 +34,36 @@ venv/
 # VSCode / Editor settings
 .vscode/
 .idea/
+.github/
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Test output
+.pytest_cache/
+
+# Bandit security reports
+bandit.json
+
+# Temporary files
+*.tmp
+*.bak
 
 # Compiled translations
-locale/*/LC_MESSAGES/*.mo
+data/locale/*/LC_MESSAGES/*.mo
 
 # Docker
 *.pid
+
+# Python packaging
+*.egg-info/
+*.egg

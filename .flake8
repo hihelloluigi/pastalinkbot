@@ -1,0 +1,92 @@
+[flake8]
+# ============================================================================
+# FLAKE8 - Style Guide Enforcement Configuration
+# ============================================================================
+
+# Maximum line length
+max-line-length = 100
+
+# Maximum complexity
+max-complexity = 12
+
+# File patterns to include
+include = *.py
+
+# Directories to exclude
+exclude = 
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    env,
+    .env,
+    build,
+    dist,
+    *.egg-info,
+    .tox,
+    .coverage,
+    .coverage.*,
+    .cache,
+    .pytest_cache,
+    .mypy_cache
+
+# Error codes to ignore
+ignore = 
+    # E203: whitespace before ':' (conflicts with black)
+    E203,
+    # E501: line too long (handled by black)
+    E501,
+    # W503: line break before binary operator (conflicts with black)
+    W503,
+    # E402: module level import not at top of file (sometimes necessary)
+    E402,
+    # F401: imported but unused (sometimes used for re-exports)
+    F401
+
+# Error codes to select (use all by default)
+select = E,W,F,C,N
+
+# Enable specific plugins
+enable-extensions = 
+    # Docstring conventions
+    D,
+    # Import order
+    I,
+    # Bugbear (additional checks)
+    B
+
+# Docstring conventions (pep257)
+docstring-convention = google
+
+# Import order style
+import-order-style = google
+application-import-names = config,core,utils
+
+# Per-file ignores
+per-file-ignores = 
+    # Tests can have longer lines and unused imports
+    tests/*:E501,F401,D
+    # __init__.py files can have unused imports (re-exports)
+    __init__.py:F401,D104
+    # Config files can have longer lines
+    config/*:E501
+    # Allow star imports in __init__ files
+    */__init__.py:F403,F405
+
+# Inline comment position
+inline-quotes = double
+
+# Maximum function length
+max-function-length = 50
+
+# Maximum class length  
+max-class-length = 100
+
+# Enable specific error codes
+enable = 
+    # Require docstrings
+    D100,D101,D102,D103,D104,D105,D106,D107,
+    # Import conventions
+    I100,I101,I201,I202,
+    # Bugbear checks
+    B001,B002,B003,B004,B005,B006,B007,B008,B009,B010

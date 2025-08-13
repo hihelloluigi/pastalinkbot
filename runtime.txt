@@ -1,1 +1,3 @@
+## Specifies the Python runtime version for deployment (e.g., Heroku, cloud platforms)
+## See https://devcenter.heroku.com/articles/python-runtimes
 python-3.13.1

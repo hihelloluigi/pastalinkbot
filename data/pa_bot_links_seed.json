@@ -1,202 +1,434 @@
 [
   {
     "intent": "fascicolo_sanitario",
-    "sub_intent": "accesso_fse",
     "region": "Lombardia",
     "label": "FSE Lombardia",
     "url": "https://www.fascicolosanitario.regione.lombardia.it/",
-    "notes": "Accesso con SPID/CIE/CNS"
+    "description": "Fascicolo Sanitario Elettronico della Lombardia - Accesso con SPID/CIE/CNS",
+    "tags": ["health", "medical", "records", "spid", "cie"]
   },
   {
     "intent": "fascicolo_sanitario",
-    "sub_intent": "accesso_fse",
     "region": "Lazio",
-    "label": "FSE Lazio",
+    "label": "FSE Lazio - Salute Lazio",
     "url": "https://www.salutelazio.it/fascicolo-sanitario-elettronico1",
-    "notes": "Accesso con SPID/CIE/CNS"
+    "description": "Fascicolo Sanitario Elettronico del Lazio - Accesso con SPID/CIE/CNS",
+    "tags": ["health", "medical", "records", "spid", "cie"]
   },
   {
     "intent": "fascicolo_sanitario",
-    "sub_intent": "accesso_fse",
     "region": "Emilia-Romagna",
-    "label": "FSE Emilia-Romagna",
+    "label": "FSE Emilia-Romagna 2.0",
     "url": "https://salute.regione.emilia-romagna.it/fascicolo-sanitario-elettronico-2-0",
-    "notes": "Accesso e assistenza"
+    "description": "Fascicolo Sanitario Elettronico dell'Emilia-Romagna - Accesso e assistenza",
+    "tags": ["health", "medical", "records"]
   },
   {
     "intent": "fascicolo_sanitario",
-    "sub_intent": "accesso_fse",
     "region": "Veneto",
-    "label": "FSE Veneto (Sanità km zero)",
+    "label": "FSE Veneto - Sanità km zero",
     "url": "https://sanitakmzerofascicolo.it/",
-    "notes": "Referti e prenotazioni CUP"
+    "description": "Fascicolo Sanitario Elettronico del Veneto - Referti e prenotazioni CUP",
+    "tags": ["health", "medical", "records", "cup"]
   },
   {
     "intent": "fascicolo_sanitario",
-    "sub_intent": "accesso_fse",
     "region": "Piemonte",
-    "label": "Salute Piemonte – FSE",
+    "label": "Salute Piemonte - FSE",
     "url": "https://www.salutepiemonte.it/",
-    "notes": "Punto unico servizi sanitari"
+    "description": "Fascicolo Sanitario Elettronico del Piemonte - Punto unico servizi sanitari",
+    "tags": ["health", "medical", "records"]
   },
   {
     "intent": "fascicolo_sanitario",
-    "sub_intent": "accesso_fse",
     "region": "Toscana",
     "label": "FSE Toscana",
     "url": "https://fascicolosanitario.regione.toscana.it/",
-    "notes": "Accesso al FSE"
+    "description": "Fascicolo Sanitario Elettronico della Toscana",
+    "tags": ["health", "medical", "records"]
   },
   {
     "intent": "fascicolo_sanitario",
-    "sub_intent": "portale_nazionale",
-    "region": "Nazionale",
-    "label": "FSE nazionale – Informazioni",
-    "url": "https://www.fascicolosanitario.gov.it/",
-    "notes": "Info generali e link ai fascicoli regionali"
-  },
-  {
-    "intent": "fascicolo_sanitario",
-    "sub_intent": "elenco_regionali",
-    "region": "Nazionale",
-    "label": "Elenco FSE regionali",
-    "url": "https://www.fascicolosanitario.gov.it/fascicoli-regionali.html",
-    "notes": "Lista link ai FSE per Regione"
-  },
-  {
-    "intent": "bollo_auto",
-    "sub_intent": "calcolo_bollo",
-    "region": "Nazionale",
-    "label": "ACI – Calcolo bollo/superbollo",
-    "url": "https://online.aci.it/acinet/calcolobollo/",
-    "notes": "Calcolo ufficiale ACI"
-  },
-  {
-    "intent": "bollo_auto",
-    "sub_intent": "informazioni_bollo",
-    "region": "Nazionale",
-    "label": "ACI – Bollo auto (panoramica)",
-    "url": "https://aci.gov.it/servizi/bollo-auto/",
-    "notes": "Info e servizi collegati"
-  },
-  {
-    "intent": "bollo_auto",
-    "sub_intent": "pagamento_bollo",
-    "region": "Nazionale",
-    "label": "PagoPA – Home",
-    "url": "https://www.pagopa.gov.it/",
-    "notes": "Piattaforma pagamenti verso PA"
-  },
-  {
-    "intent": "patente",
-    "sub_intent": "portale_automobilista",
-    "region": "Nazionale",
-    "label": "Portale dell’Automobilista – Home",
-    "url": "https://www.ilportaledellautomobilista.it/",
-    "notes": "Servizi patenti e veicoli"
-  },
-  {
-    "intent": "patente",
-    "sub_intent": "rinnovo_patente_info",
-    "region": "Nazionale",
-    "label": "Rinnovo patente – Info operative",
-    "url": "https://www.ilportaledellautomobilista.it/web/portale-automobilista/modalita-operative-rinnovo-patenti",
-    "notes": "Istruzioni operative"
-  },
-  {
-    "intent": "servizi_pubblici",
-    "sub_intent": "app_io_sito",
-    "region": "Nazionale",
-    "label": "App IO – Sito ufficiale",
-    "url": "https://ioapp.it/",
-    "notes": "App dei servizi pubblici"
-  },
-  {
-    "intent": "servizi_pubblici",
-    "sub_intent": "app_io_playstore",
-    "region": "Nazionale",
-    "label": "App IO – Google Play",
-    "url": "https://play.google.com/store/apps/details?hl=it&id=it.pagopa.io.app",
-    "notes": "Scheda store Android"
-  },
-  {
-    "intent": "servizi_pubblici",
-    "sub_intent": "pagopa_info",
-    "region": "Nazionale",
-    "label": "PagoPA – Sito società",
-    "url": "https://www.pagopa.it/",
-    "notes": "Info istituzionali PagoPA"
-  },
-  {
-    "intent": "anagrafe",
-    "sub_intent": "certificati_online",
-    "region": "Nazionale",
-    "label": "ANPR – Certificati online",
-    "url": "https://www.anagrafenazionale.interno.it/area-cittadino/certificati/",
-    "notes": "Scarico certificati anagrafici"
-  },
-  {
-    "intent": "fascicolo_sanitario",
-    "sub_intent": "accesso_fse",
     "region": "Sicilia",
-    "label": "FSE Sicilia",
+    "label": "FSE Sicilia - Sistema TS",
     "url": "https://www.sistemats.sanita.sicilia.it/",
-    "notes": "Accesso SPID/CIE/CNS"
+    "description": "Fascicolo Sanitario Elettronico della Sicilia - Accesso SPID/CIE/CNS",
+    "tags": ["health", "medical", "records", "spid", "cie"]
   },
   {
     "intent": "fascicolo_sanitario",
-    "sub_intent": "accesso_fse",
     "region": "Puglia",
-    "label": "FSE Puglia",
+    "label": "FSE Puglia - Puglia Salute",
     "url": "https://www.sanita.puglia.it/web/pugliasalute/fascicolo-sanitario-elettronico",
-    "notes": "Portale salute Puglia"
+    "description": "Fascicolo Sanitario Elettronico della Puglia",
+    "tags": ["health", "medical", "records"]
   },
   {
     "intent": "fascicolo_sanitario",
-    "sub_intent": "accesso_fse",
     "region": "Campania",
-    "label": "FSE Campania",
+    "label": "FSE Campania - SORESA",
     "url": "https://www.soresa.it/fse/",
-    "notes": "Accesso fascicolo Campania"
+    "description": "Fascicolo Sanitario Elettronico della Campania",
+    "tags": ["health", "medical", "records"]
   },
   {
     "intent": "fascicolo_sanitario",
-    "sub_intent": "accesso_fse",
     "region": "Sardegna",
     "label": "FSE Sardegna",
     "url": "https://www.fascicolosanitario.sardegnasalute.it/",
-    "notes": "Portale salute Sardegna"
+    "description": "Fascicolo Sanitario Elettronico della Sardegna",
+    "tags": ["health", "medical", "records"]
   },
   {
-    "intent": "cup",
-    "sub_intent": "prenotazioni_visite",
+    "intent": "fascicolo_sanitario",
+    "region": "Calabria",
+    "label": "FSE Calabria",
+    "url": "https://portale.regione.calabria.it/website/portaltemplates/view/view.cfm?19680",
+    "description": "Fascicolo Sanitario Elettronico della Calabria",
+    "tags": ["health", "medical", "records"]
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "region": "Liguria",
+    "label": "FSE Liguria",
+    "url": "https://www.fascicolosanitario.regione.liguria.it/",
+    "description": "Fascicolo Sanitario Elettronico della Liguria",
+    "tags": ["health", "medical", "records"]
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "region": "Marche",
+    "label": "FSE Marche",
+    "url": "https://www.fascicolosanitario.marche.it/",
+    "description": "Fascicolo Sanitario Elettronico delle Marche",
+    "tags": ["health", "medical", "records"]
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "region": "Abruzzo",
+    "label": "FSE Abruzzo",
+    "url": "https://www.sanita.abruzzo.it/content/fascicolo-sanitario-elettronico",
+    "description": "Fascicolo Sanitario Elettronico dell'Abruzzo",
+    "tags": ["health", "medical", "records"]
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "region": "Umbria",
+    "label": "FSE Umbria",
+    "url": "https://www.regione.umbria.it/salute-e-welfare/fascicolo-sanitario-elettronico",
+    "description": "Fascicolo Sanitario Elettronico dell'Umbria",
+    "tags": ["health", "medical", "records"]
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "region": "Valle d'Aosta",
+    "label": "FSE Valle d'Aosta",
+    "url": "https://www.regione.vda.it/salute/fascicolo_sanitario_elettronico/default_i.aspx",
+    "description": "Fascicolo Sanitario Elettronico della Valle d'Aosta",
+    "tags": ["health", "medical", "records"]
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "region": "Nazionale",
+    "label": "FSE Nazionale - Portale ufficiale",
+    "url": "https://www.fascicolosanitario.gov.it/",
+    "description": "Portale nazionale del Fascicolo Sanitario Elettronico - Informazioni generali",
+    "tags": ["health", "medical", "records", "national"]
+  },
+  {
+    "intent": "fascicolo_sanitario",
+    "region": "Nazionale",
+    "label": "Elenco FSE regionali",
+    "url": "https://www.fascicolosanitario.gov.it/fascicoli-regionali.html",
+    "description": "Lista completa dei Fascicoli Sanitari Elettronici regionali",
+    "tags": ["health", "medical", "records", "regions"]
+  },
+  {
+    "intent": "bollo_auto",
+    "region": "Nazionale",
+    "label": "ACI - Calcolo Bollo Auto",
+    "url": "https://online.aci.it/acinet/calcolobollo/",
+    "description": "Calcolo ufficiale del bollo auto e superbollo - Automobile Club d'Italia",
+    "tags": ["car", "tax", "vehicle", "payment"]
+  },
+  {
+    "intent": "bollo_auto",
+    "region": "Nazionale",
+    "label": "ACI - Servizi Bollo Auto",
+    "url": "https://aci.gov.it/servizi/bollo-auto/",
+    "description": "Informazioni complete sul bollo auto e servizi correlati",
+    "tags": ["car", "tax", "vehicle", "info"]
+  },
+  {
+    "intent": "bollo_auto",
+    "region": "Nazionale",
+    "label": "PagoPA - Pagamento Bollo",
+    "url": "https://www.pagopa.gov.it/",
+    "description": "Piattaforma ufficiale per il pagamento del bollo auto e altri tributi",
+    "tags": ["payment", "tax", "pagopa"]
+  },
+  {
+    "intent": "bollo_auto",
     "region": "Lombardia",
-    "label": "Prenotazioni Regione Lombardia",
-    "url": "https://prenotasalute.regione.lombardia.it/",
-    "notes": "Prenotazione visite/esami"
+    "label": "Regione Lombardia - Bollo Auto",
+    "url": "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/servizi-e-informazioni/cittadini/trasporti/bollo-auto",
+    "description": "Servizi per il bollo auto in Lombardia",
+    "tags": ["car", "tax", "lombardia", "regional"]
+  },
+  {
+    "intent": "bollo_auto",
+    "region": "Lazio",
+    "label": "Regione Lazio - Bollo Auto",
+    "url": "https://www.regione.lazio.it/cittadini/trasporti/bollo-auto",
+    "description": "Informazioni e servizi per il bollo auto nel Lazio",
+    "tags": ["car", "tax", "lazio", "regional"]
+  },
+  {
+    "intent": "patente",
+    "region": "Nazionale",
+    "label": "Portale dell'Automobilista",
+    "url": "https://www.ilportaledellautomobilista.it/",
+    "description": "Portale ufficiale per tutti i servizi relativi a patenti e veicoli",
+    "tags": ["driving", "license", "vehicle", "renewal"]
+  },
+  {
+    "intent": "patente",
+    "region": "Nazionale",
+    "label": "Rinnovo Patente - Procedure",
+    "url": "https://www.ilportaledellautomobilista.it/web/portale-automobilista/modalita-operative-rinnovo-patenti",
+    "description": "Istruzioni dettagliate per il rinnovo della patente di guida",
+    "tags": ["driving", "license", "renewal", "procedure"]
+  },
+  {
+    "intent": "patente",
+    "region": "Nazionale",
+    "label": "Ministero Trasporti - Patenti",
+    "url": "https://www.mit.gov.it/comunicazione/cittadini/patenti",
+    "description": "Informazioni ufficiali sulle patenti di guida",
+    "tags": ["driving", "license", "ministry"]
+  },
+  {
+    "intent": "io_app",
+    "region": "Nazionale",
+    "label": "App IO - Sito Ufficiale",
+    "url": "https://ioapp.it/",
+    "description": "App ufficiale dei servizi pubblici italiani",
+    "tags": ["app", "services", "digital", "government"]
+  },
+  {
+    "intent": "io_app",
+    "region": "Nazionale",
+    "label": "App IO - Google Play Store",
+    "url": "https://play.google.com/store/apps/details?hl=it&id=it.pagopa.io.app",
+    "description": "Scarica l'App IO dal Google Play Store",
+    "tags": ["app", "android", "download"]
+  },
+  {
+    "intent": "io_app",
+    "region": "Nazionale",
+    "label": "App IO - Apple App Store",
+    "url": "https://apps.apple.com/it/app/io/id1501681835",
+    "description": "Scarica l'App IO dall'Apple App Store",
+    "tags": ["app", "ios", "download"]
+  },
+  {
+    "intent": "pagopa",
+    "region": "Nazionale",
+    "label": "PagoPA - Servizi di Pagamento",
+    "url": "https://www.pagopa.gov.it/",
+    "description": "Piattaforma nazionale per i pagamenti verso la Pubblica Amministrazione",
+    "tags": ["payment", "government", "services"]
+  },
+  {
+    "intent": "pagopa",
+    "region": "Nazionale",
+    "label": "PagoPA - Società",
+    "url": "https://www.pagopa.it/",
+    "description": "Informazioni istituzionali sulla società PagoPA S.p.A.",
+    "tags": ["payment", "company", "institutional"]
+  },
+  {
+    "intent": "anpr",
+    "region": "Nazionale",
+    "label": "ANPR - Certificati Online",
+    "url": "https://www.anagrafenazionale.interno.it/area-cittadino/certificati/",
+    "description": "Scarica certificati anagrafici online dall'Anagrafe Nazionale",
+    "tags": ["certificates", "registry", "online", "anpr"]
+  },
+  {
+    "intent": "anpr",
+    "region": "Nazionale",
+    "label": "ANPR - Servizi al Cittadino",
+    "url": "https://www.anagrafenazionale.interno.it/area-cittadino/",
+    "description": "Tutti i servizi ANPR per i cittadini",
+    "tags": ["certificates", "registry", "services"]
   },
   {
     "intent": "cup",
-    "sub_intent": "prenotazioni_visite",
+    "region": "Lombardia",
+    "label": "Prenota Salute Lombardia",
+    "url": "https://prenotasalute.regione.lombardia.it/",
+    "description": "Prenotazione online di visite mediche ed esami in Lombardia",
+    "tags": ["health", "booking", "medical", "visits"]
+  },
+  {
+    "intent": "cup",
+    "region": "Lazio",
+    "label": "Salute Lazio - Prenotazioni",
+    "url": "https://www.salutelazio.it/prenotazioni-online",
+    "description": "Sistema di prenotazione online per il Lazio",
+    "tags": ["health", "booking", "medical", "visits"]
+  },
+  {
+    "intent": "cup",
+    "region": "Emilia-Romagna",
+    "label": "CUP Emilia-Romagna",
+    "url": "https://salute.regione.emilia-romagna.it/cup-web/",
+    "description": "Centro Unico Prenotazioni dell'Emilia-Romagna",
+    "tags": ["health", "booking", "medical", "visits"]
+  },
+  {
+    "intent": "cup",
+    "region": "Veneto",
+    "label": "Zero Code Veneto",
+    "url": "https://zerocode.veneto.it/",
+    "description": "Sistema di prenotazione sanitaria del Veneto",
+    "tags": ["health", "booking", "medical", "visits"]
+  },
+  {
+    "intent": "cup",
+    "region": "Piemonte",
+    "label": "Salute Piemonte - Prenotazioni",
+    "url": "https://www.salutepiemonte.it/servizi/prenotazioni",
+    "description": "Prenotazioni sanitarie online in Piemonte",
+    "tags": ["health", "booking", "medical", "visits"]
+  },
+  {
+    "intent": "cup",
+    "region": "Toscana",
+    "label": "Prenoto Salute Toscana",
+    "url": "https://prenotosalute.regione.toscana.it/",
+    "description": "Portale prenotazioni sanitarie della Toscana",
+    "tags": ["health", "booking", "medical", "visits"]
+  },
+  {
+    "intent": "cup",
     "region": "Sicilia",
-    "label": "CUP Sicilia",
+    "label": "CUP Sicilia - Sistema TS",
     "url": "https://www.sistemats.sanita.sicilia.it/prenotazioni",
-    "notes": "Sistema prenotazioni Sicilia"
+    "description": "Sistema di prenotazioni sanitarie della Sicilia",
+    "tags": ["health", "booking", "medical", "visits"]
+  },
+  {
+    "intent": "cup",
+    "region": "Puglia",
+    "label": "Puglia Salute - Prenotazioni",
+    "url": "https://www.sanita.puglia.it/prenotazioni-online",
+    "description": "Prenotazioni online per la sanità pugliese",
+    "tags": ["health", "booking", "medical", "visits"]
+  },
+  {
+    "intent": "cup",
+    "region": "Campania",
+    "label": "SINFONIA Campania",
+    "url": "https://www.sinfonia.regione.campania.it/",
+    "description": "Sistema informativo sanitario della Campania",
+    "tags": ["health", "booking", "medical", "visits"]
   },
   {
     "intent": "scuola",
-    "sub_intent": "iscrizioni_online",
     "region": "Nazionale",
-    "label": "Iscrizioni Online MIUR",
+    "label": "Iscrizioni Online - MIUR",
     "url": "https://www.istruzione.it/iscrizionionline/",
-    "notes": "Accesso con SPID"
+    "description": "Portale per le iscrizioni online alle scuole - Accesso con SPID",
+    "tags": ["school", "enrollment", "education", "spid"]
+  },
+  {
+    "intent": "scuola",
+    "region": "Nazionale",
+    "label": "Ministero Istruzione",
+    "url": "https://www.miur.gov.it/",
+    "description": "Sito ufficiale del Ministero dell'Istruzione",
+    "tags": ["school", "education", "ministry"]
+  },
+  {
+    "intent": "scuola",
+    "region": "Nazionale",
+    "label": "NoiPA - Stipendi Scuola",
+    "url": "https://www.noipa.mef.gov.it/",
+    "description": "Portale stipendi per il personale scolastico",
+    "tags": ["school", "salary", "staff"]
   },
   {
     "intent": "tari",
-    "sub_intent": "info_tari",
     "region": "Nazionale",
-    "label": "TARI – Guida Agenzia Entrate",
+    "label": "TARI - Guida Agenzia Entrate",
     "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/tasse/tari",
-    "notes": "Info nazionali sulla tassa rifiuti"
+    "description": "Informazioni ufficiali sulla tassa sui rifiuti (TARI)",
+    "tags": ["tax", "waste", "tari", "municipal"]
+  },
+  {
+    "intent": "tari",
+    "region": "Nazionale",
+    "label": "MEF - Tributi Locali",
+    "url": "https://www.finanze.gov.it/",
+    "description": "Ministero Economia e Finanze - Informazioni sui tributi locali",
+    "tags": ["tax", "local", "ministry"]
+  },
+  {
+    "intent": "spid",
+    "region": "Nazionale",
+    "label": "SPID - Sistema Pubblico Identità Digitale",
+    "url": "https://www.spid.gov.it/",
+    "description": "Portale ufficiale del Sistema Pubblico di Identità Digitale",
+    "tags": ["identity", "digital", "authentication", "spid"]
+  },
+  {
+    "intent": "spid",
+    "region": "Nazionale",
+    "label": "SPID - Come Richiedere",
+    "url": "https://www.spid.gov.it/richiedi-spid",
+    "description": "Guida per richiedere l'identità digitale SPID",
+    "tags": ["identity", "digital", "request", "how-to"]
+  },
+  {
+    "intent": "cie",
+    "region": "Nazionale",
+    "label": "CIE - Carta Identità Elettronica",
+    "url": "https://www.cartaidentita.interno.gov.it/",
+    "description": "Portale ufficiale della Carta d'Identità Elettronica",
+    "tags": ["identity", "card", "electronic", "cie"]
+  },
+  {
+    "intent": "cie",
+    "region": "Nazionale",
+    "label": "CIE - Prenotazione Online",
+    "url": "https://www.prenotazionicie.interno.gov.it/",
+    "description": "Prenotazione online per il rilascio della CIE",
+    "tags": ["identity", "card", "booking", "appointment"]
+  },
+  {
+    "intent": "inps",
+    "region": "Nazionale",
+    "label": "INPS - Istituto Previdenza Sociale",
+    "url": "https://www.inps.it/",
+    "description": "Portale ufficiale dell'Istituto Nazionale della Previdenza Sociale",
+    "tags": ["pension", "social", "security", "benefits"]
+  },
+  {
+    "intent": "agenzia_entrate",
+    "region": "Nazionale",
+    "label": "Agenzia delle Entrate",
+    "url": "https://www.agenziaentrate.gov.it/",
+    "description": "Portale ufficiale dell'Agenzia delle Entrate",
+    "tags": ["tax", "revenue", "fiscal"]
+  },
+  {
+    "intent": "agenzia_entrate",
+    "region": "Nazionale",
+    "label": "Fisconline - Agenzia Entrate",
+    "url": "https://www.agenziaentrate.gov.it/wps/content/nsilib/nsi/strumenti/fisconline",
+    "description": "Servizi online dell'Agenzia delle Entrate",
+    "tags": ["tax", "online", "services"]
   }
 ]

@@ -1,0 +1,8 @@
+# PAstaLinkBot Production Requirements
+# Production dependencies only
+
+# Include base requirements
+-r base.txt
+
+# Production-specific dependencies (if any)
+# Add any production-specific packages here
