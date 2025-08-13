@@ -135,6 +135,44 @@ telegram-pa-bot/
 
 ---
 
+## 🤝 Contributing
+
+### Expanding the Database
+
+Want to help make PAstaLinkBot more useful? You can contribute by expanding the database of public service links!
+
+The bot uses a JSON database located at `data/pa_bot_links_seed.json` that contains Italian public service links. If you know of additional services that should be included, feel free to:
+
+1. **Fork the repository**
+2. **Add new entries** to the database file
+3. **Create a pull request** with your additions
+
+Each entry should include:
+
+- **intent**: Main category of the service (e.g., "fascicolo_sanitario", "bollo_auto", "patente")
+- **sub_intent**: Specific subcategory or action (e.g., "accesso_fse", "calcolo_bollo", "rinnovo_patente_info")
+- **region**: Geographic scope ("Nazionale" for national services, or specific region name)
+- **label**: Human-readable name for the service
+- **url**: The official link to the service
+- **notes**: Brief explanation or additional information about the service
+
+### Example Database Entry
+
+```json
+{
+  "intent": "fascicolo_sanitario",
+  "sub_intent": "accesso_fse",
+  "region": "Lombardia",
+  "label": "FSE Lombardia",
+  "url": "https://www.fascicolosanitario.regione.lombardia.it/",
+  "notes": "Accesso con SPID/CIE/CNS"
+}
+```
+
+Your contributions help make Italian public services more accessible to everyone! 🇮🇹
+
+---
+
 ## 📜 License
 
 MIT License. Free to use, modify, and share.
